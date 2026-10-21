@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "openwiki": {
+      "command": "mise",
+      "args": [
+        "exec",
+        "node@22.23.3",
+        "--",
+        "npx",
+        "--yes",
+        "openwiki@0.7.2",
+        "mcp",
+        "--host",
+        "codex"
+      ]
+    }
+  }
+}

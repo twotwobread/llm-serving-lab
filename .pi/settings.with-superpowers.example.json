@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "npm:openwiki@0.7.2",
+    "git:github.com/obra/superpowers@b739a8af570e10a95898f2bdf6cec97467fa6c12"
+  ]
+}

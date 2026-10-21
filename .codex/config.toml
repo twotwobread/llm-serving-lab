@@ -1,0 +1,5 @@
+[plugins."openwiki@llm-serving-lab"]
+enabled = true
+
+[plugins."superpowers@llm-serving-lab"]
+enabled = false

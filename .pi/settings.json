@@ -1,0 +1,5 @@
+{
+  "packages": [
+    "npm:openwiki@0.7.2"
+  ]
+}

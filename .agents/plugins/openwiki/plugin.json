@@ -1,0 +1,6 @@
+{
+  "name": "openwiki",
+  "version": "0.7.2",
+  "description": "Project packaging of upstream OpenWiki skill and MCP; no custom wiki implementation.",
+  "license": "MIT"
+}
