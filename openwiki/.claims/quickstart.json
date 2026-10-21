@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:63afa0241e5696feb333c35c655ed41727e13645cb976371c010ce5e946ada8e",
+  "claims": [
+    {
+      "id": "claim_ea289e508a7343d0aa64af25a597877f",
+      "statement": "프로젝트 목적은 Kubernetes에서 LLM 서빙의 종료·교체 안정성을 재현하고 검증하는 것이다.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L1-L3",
+          "version": "repo-lines-v1:sha256:1885db4d4220e2e5809d08fc81e86e46612c3f683192a76a36f7ee8560659d62:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTE0YzRjYzdlMzVlN2Y2OGQ1ZDhlMTk4YWEzNWRiMTUyYzBkNGRlZTAwYWY0ZTllMjM3OTgwNmM1MjU3ZmRkOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTU2MDcyOTcyNTExMGUxMmE4MzQ4MGY3ZTU5NTZkNWYzN2Y3MTM3YjE1YTdiNDQ0ZTg2Y2ZhMDMzZjJjYWFiZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODFmMDZhOWVkOTk2Zjg5ODlhOWI0M2JhOWJlZmVkMmZmZjFkNDU3ZjcxNWEzYTExOWE1MDdkNTEyNWMzMmE5YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_68727b3f8a694301a47bd1324d681c39",
+      "statement": "프로젝트 문서 정책은 하네스와 검증된 위키, 미검증 docs 입력을 구분하고 README 역참조를 금지한다.",
+      "evidence": [
+        {
+          "resource": "repo://.harness/documentation.md",
+          "version": "repo-file-v1:sha256:23d36c798ad1866288f3cd09ebf05c50db441d137e090958c165fee1b2a8f20a"
+        }
+      ]
+    },
+    {
+      "id": "claim_a0b7a544f4024bd48f590d58b893c595",
+      "statement": "초기 위키 범위는 합의한 서빙 실험 설계 방향과 현재 에이전트 설정이며 Operator·CRD·faker·GPU 실험 구현이나 실행 증거는 없다.",
+      "evidence": [
+        {
+          "resource": "repo://.agents/plugins/marketplace.json",
+          "version": "repo-file-v1:sha256:c191fd8aa96a8c3239febac7354f0c477e1c34b901629a99034a86b359477c8b"
+        },
+        {
+          "resource": "repo://.pi/settings.json",
+          "version": "repo-file-v1:sha256:fa5dc261dd25a398c5502fa98916632dbd804ba17124fd64133c79afa29e50ee"
+        },
+        {
+          "resource": "repo://docs/project-status.md#L3-L8",
+          "version": "repo-lines-v1:sha256:ce23c8182c873efa4c7ab837e0e6784a259de1443b36f7fd27b8e921e28f8629:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2QxZTE2YmVmYWEyOTg4YmE1ZTQ2YmQyODdmYmY3ZWQ4NzY0ODU0NzVlNWQ1Yzc5NTBkYTI4ZjUzNDUyZWRjMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTZhMWY4MGM5ZGNiMzQwMGY3ZjE4ZDA5ODM2YzRiY2IzMTMxYzJmYzYyMGNjNTc4ODlmYjg5Y2JiZWVlY2RjMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGIyODBhMDc5NjhjNWZiYWQ5ZGQ1NmUxZmQ0ZTY4Y2NjZGFkYzBhNTY0ZjVjMDRjYzVkNzAyNjNiMWZlOTI0OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDgyOTI2NzcyMDQ1ZjAzMzUwODE0NmFlNDcyZjAwMWNhZjkwMDM1YTA0M2Y5MTA4YTM2MDFkNGU3ZjM4YTcyNCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-10-21T09:25:17.281Z"
+  }
+}

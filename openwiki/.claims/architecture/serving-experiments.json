@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:78ea0cf56c59a3fcdfbdb2c646a50e37a071a563917389d334d80bb18c71700d",
+  "claims": [
+    {
+      "id": "claim_cdc58e6ad34f4784a28d065ebe078ba0",
+      "statement": "초기 설계의 첫 검증 대상은 scale-in 또는 배포 교체 중 진행 중인 스트리밍 요청 중단이며, API 스키마는 미확정이다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-10-21-serving-reliability-design.md#L3-L21",
+          "version": "repo-lines-v1:sha256:8374a0a36e20c4a77c008d9be7426b7a6f05e731ac8a18e68212fba91062c7fe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkMWVkNDYyOTg1NGYwN2MyMjY3YTIwY2ZlZGM1ZGRkNGExOGU3OWM0MjBiMzZjZDQxZTZjNjQzNDVhYzlmY2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2NmU1ZTBjZjExOTMwYzAzYWRkMjIwYTdkOTZmNWNkYTY5ZmUzOTlmNjQwMWU0MTg3ZDg1NGY3NDE0NmU1NjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxM2ZmNzVhZTVhMWE5NjdhZDg4Y2ViYjg2ZGZkMDQzMTM2ZjE0MGE5MjAyOGRiM2M1YmFmNmQ0Mzk2N2QzMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwODJlOGFjZWM2MDRiMmExMzA1YTllZTJjYmI0NjU1MjZkNmE3NTI5MDg4MmYxOTQ3OTMyYjY2MjYwMDk0NmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a2026ee43cce4944bdb7e5f3048c66b9",
+      "statement": "설계상 ModelServing은 Deployment와 Service를 관리하고 ExperimentRun은 기존 서버를 참조하며 실험용 Job을 관리한다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-10-21-serving-reliability-design.md#L23-L34",
+          "version": "repo-lines-v1:sha256:beadd9b4210bdd84165d6d2bac52f6e7cb6142f75a8cd2ae54d095523955d6cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlNzRjYWRlZTkzZGY2MGFmMTZmY2FhYmY1NThmZGU0NGUwZDkwODRiNTNkOGQzYjJlYTAzMjI0MTQ2YzBlZDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0MTE5Y2MxMmM5Y2ZhYzVlYjk4MjUxNjZkODY0ZGViMjBlYTBhNDc2NDdjYWM5NGYyNzgzYWJkMjIwNmU4ZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiMGM0NTMwODFiMzJhNDA2ZTQ1N2U5ZTAxMzVjODVlNmE5YzA5OTIyNzJmOWJiM2ViZDAyZGM4NTRmMDU2NzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5ZTVlZjk1NGY4YmRlYmYxNDFiODc1NjNmMGE3OGQ5NDZlY2M0YTA1OTRjYzBhYTc4NGU2MzMyMDU2YTMwZGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3c199d917fbe457fb6af10a7609a635c",
+      "statement": "설계상 실험은 서버를 소유하지 않으며 서빙 Deployment를 직접 수정하지 않는다. 자동 확장과 수동 조작의 충돌 정책은 미결정이다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-10-21-serving-reliability-design.md#L31-L39",
+          "version": "repo-lines-v1:sha256:03182866604c1a4ccf619e851f2f91593c0dbb9ff47caabceb327a81c449722b:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTUxMzYxMGQ4MTBjZjU5MTMzMmE0OGE0MmJjYTYxN2FhNWU4ZDVjNGM1NzFhMTI0MWE5N2E2ZWQwZjAxNTQyNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDU4MGNlMDIxNjE0MTMzOTg5M2EyNzgyMjBlZTM5Y2M0YjMyOWRmNTUzOGU1NGZjNTE4OGI1MjJiYjNhZmQ4NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWQxY2QyNzU1ZmQ2Y2MwNjI4OTNmYzNiZWJlZGVmZGFmYmNlZGVmNjFiNDE0ZmM0N2Y5N2YxMjNlNzAyNzg4OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDk3MDdmYTc3ZTdkMTdiNTAzMjMyNGFlZDBkNzQzNzQyZWNhY2U2NDMwMzgxNTU0NTFiYTJhZmQ2ZjgxMmJkOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ea52aeb91cc24fdb875f94ec139c832c",
+      "statement": "설계상 한 실험 CR은 한 번의 실행을 표현하고 완료된 실행의 재시작을 막으며 실행 완료와 판정 통과를 구분한다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-10-21-serving-reliability-design.md#L33-L37",
+          "version": "repo-lines-v1:sha256:ad30695801e67ca1510297d187f6663c5e363ee6d0d8840c67ee5f921a95cedc:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGYwOWU1NzE2MTk1OWIzYzM5MTA3NGNiY2E3ZTMxZTYxNDRkMzQ0ZDk3NmE1ZGE3ODY2ZjY5YWJkZjE4YzI5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGQ5MjI1MDIxYmM4NTI5MWE5ODk1NGI3ZDQ0YzhhYThiZDVlZWE5MzRjZmYxNjAyNjU2M2VhZjVkMjIzMDRmNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTRjZmM2YzhkNjA1OWJmZjE4MTNhYjJkNDViMDI1NGViNTc0NTQzNGEzYzFiN2Y2ZmVlM2UzMDIzYTJlNWMwMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjhhYWEwMzFhYzJkZTA3YzhmM2NlZDc2MmUyYTcyYmFlMzMwMzJhMzFhM2QyOGQ3NGQzMmRkOWQwZmJmMmRhNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-10-21T09:25:17.281Z"
+  }
+}

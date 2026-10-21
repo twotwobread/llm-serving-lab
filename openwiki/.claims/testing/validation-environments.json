@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:46a3533975baf3a1f77c4acb1003144e6900c3a5ef1f3a219994e956e730233e",
+  "claims": [
+    {
+      "id": "claim_f0af20d378f24c229ebb44028ade4777",
+      "statement": "합의한 개발 방향은 로컬 Kubernetes와 faker에서 개발하고 필요할 때 독립 GPU VM 클러스터에서 실제 엔진을 검증하는 것이다. 로컬 클러스터에 원격 GPU 노드를 조인하지 않는다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/development.md#L3-L10",
+          "version": "repo-lines-v1:sha256:ccf50b5204995d49a9413b6cd1aee20675e9cecdaf6e95f36bb36fd2b20cbf95:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDU5NDgyNDU1MmI2YmViMDk5YjdhODcwODJjOWY2N2ZhYTEwMDA1MjQ1MTI0YTBiNzBhMWM0MDFjMDU0ODAwNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGRkY2QzZGUwZGI3Zjk4ODI0MzRiMDk3MjgwNjc1ZjJjMDZkYTNhNmY3ZTkzNDdmYmRlMTc4NGE0OTMyOGExYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjk2NzVjYmM4MWJlZjM2ZmI4YzdhZDM3NjE3YmE4NTAzMmYyYTNmNWEwZWI4MTEwYjBlNmEwYzQ5NzU4ZDZkMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzVlYWU2OGQ5NzhlY2E0YTY5ODBjYTYwMWY0ZWY1MTdmZjU2NTRhYzIwZmI2MDM2NTg1ZDMzYjdhMjEzMmQ1MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_12e44046fa634156939f4ec77fcc0448",
+      "statement": "환경 자동화와 GPU 실험은 구현 전이며 faker 결과를 실제 엔진 검증으로 취급하지 않는다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/development.md#L3-L13",
+          "version": "repo-lines-v1:sha256:68cae2edbda22912b04d2f8c9c164fff64a192c4913dfed751b00c9aa7835c60:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1OTQ4MjQ1NTJiNmJlYjA5OWI3YTg3MDgyYzlmNjdmYWExMDAwNTI0NTEyNGEwYjcwYTFjNDAxYzA1NDgwMDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhYjEzNTE5YWRkMzQ2NmNlZWE4YjE5NjIzYTU2N2EzZDcxMGM2NWQ0MzkzYjhjZTA1M2ZjMTNiZjg0ZDNkYjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5Njc1Y2JjODFiZWYzNmZiOGM3YWQzNzYxN2JhODUwMzJmMmEzZjVhMGViODExMGIwZTZhMGM0OTc1OGQ2ZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdkYzc4ZTBiODNmZGZjN2E4ZTQ4ZThjYWZiYzMxYWE4NTZkZTM2MzE0ODUxN2M1MDdkNDdmMmRjMGJmNDczMWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_03bb9f866030437fa9667823135735f9",
+      "statement": "관측 설계는 클라이언트·서버·Kubernetes 기록을 요청 ID, Pod UID, 실험 ID 및 시각으로 연결하며 요청 ID는 메트릭 라벨에 넣지 않는다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-10-21-serving-reliability-design.md#L43-L48",
+          "version": "repo-lines-v1:sha256:fdf90f709e4e938d45e343cc4d4d8da590471faa96e35878319b585d3b60e157:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWE1ZTUxN2Y0M2VlMmI4YjU0OGZiYWQ4NWNkMTc4MDI1NzU5YmYxMTU0NzhkN2I1NTVmNDM1ODkwZjliMzgzOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjdiMWZmYjcxYzIxYjcwZDQ3NzI3YjBhM2ZmZGUyMjgxZjE3Mzg3YzZlNGM1MDcxNWRmMjRkYWQwYzczMDhmZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDk3MDdmYTc3ZTdkMTdiNTAzMjMyNGFlZDBkNzQzNzQyZWNhY2U2NDMwMzgxNTU0NTFiYTJhZmQ2ZjgxMmJkOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGEzOTkwNTE4ZTZiNzkzYzEwNWY1NTgzZWIyZThjMGRjNTczNjY3MGQzOTcwZmM2NTM0MDcxMjg0ZGQzMTMwYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ad7931d41c374bdb9bda23b5adf7ff53",
+      "statement": "관측 설계는 원본 데이터를 CR status 밖에 보관하고 결과에 이미지·모델·GPU·서버 설정·부하 조건을 기록한다.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-10-21-serving-reliability-design.md#L49-L50",
+          "version": "repo-lines-v1:sha256:34430a3fc0a16a27652b893c1d2565f9b105b6146422b3646802c791767c6326:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmM4NjlhOGU5ODJkNzIxNzIwM2NiOWI2NzdjNGY0OWEyNmFiM2NmMmIxMDgzMjBkYTBkNjgyZWI5NjE3NDVjYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTExZmIwZWMzODFjYjA1MzMyZmIwMzQ2ZjhmMDVjNjlkODMzNzU1M2M5MWNmMTgzMTZhYTY0YTM5MTEzMGI1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmIxZTAzZDA3MWQxNWZiMmQ0ZGEwOWJlYTdiNmZiZjRlYjc3NDVmYzU5MWM5MzU1NDMwNDFmOWI5ZGUxMTIwMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ0NWIyMWMwNWNiNjVmNjE1MDg0ZWUyMmQ5Zjc3MmNkMjcxZmU3ODcyYjBhMWUwOTBiN2U1ZWRkNWNmOTBmMyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-10-21T09:25:17.281Z"
+  }
+}

@@ -1,0 +1,6 @@
+# README is a derived output, never input evidence.
+README.md
+**/README.md
+.env
+.env.*
+artifacts/

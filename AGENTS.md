@@ -20,3 +20,22 @@
 - 인증 정보와 원본 실험 데이터를 Git에 커밋하지 않는다.
 - 클라우드 유료 자원 생성 전 사용자가 승인한 비용·범위를 확인한다. 설계 합의만으로 실행 승인을 추정하지 않는다.
 - 존재하지 않는 명령을 만들거나 수행하지 않은 검증을 완료했다고 보고하지 않는다.
+
+프로젝트에서는 예약 위키 갱신을 구성하지 않았다. 아래 OpenWiki 자동 생성 블록의 예약 workflow 안내는 이 저장소에 적용되지 않으며, 위키 갱신은 명시적인 요청으로 수행한다.
+
+<!-- OPENWIKI:START -->
+
+## OpenWiki
+
+This repository has a generated `openwiki/` evidence index. It is optional just-in-time context, not required startup reading.
+
+- Do not enumerate, preload, or search wikis at task start. Use retrieval when the user asks for it, when unfamiliar architecture or dependency behavior materially affects the task, or when source inspection leaves an important uncertainty. Stop once the question is grounded.
+- When those conditions apply and OpenWiki retrieval tools are available, use `openwiki_search` for just-in-time context and `openwiki_read` for the relevant complete sections. If search returns `workspace_required`, ask which listed workspace to use and retry with its ID.
+- Use `openwiki_list_workspaces` or `openwiki_list_wikis` when workspace membership itself needs to be discovered.
+- If the retrieval tools are unavailable, read `openwiki/quickstart.md` and follow its links to the relevant pages.
+- Treat source code and tests as authoritative. A brief's unknowns and review items are verification gaps, not automatic requirements.
+- Prefer the narrowest quiet validation that proves the changed behavior. Preserve complete failure output.
+
+The scheduled OpenWiki GitHub Actions workflow refreshes the repository wiki. Do not hand-edit generated OpenWiki pages unless explicitly asked; prefer updating source code/docs and letting OpenWiki regenerate.
+
+<!-- OPENWIKI:END -->

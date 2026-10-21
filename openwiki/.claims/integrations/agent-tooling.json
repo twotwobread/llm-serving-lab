@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:6a7975e7c25844c1f578eff1303b7465ede6945c7971973cf569be5a722e3a55",
+  "claims": [
+    {
+      "id": "claim_33a6257aedd84e64a2e224f82eaa2ad5",
+      "statement": "Codex 프로젝트는 OpenWiki를 기본 활성화하고 Superpowers를 비활성화한다.",
+      "evidence": [
+        {
+          "resource": "repo://.agents/plugins/marketplace.json",
+          "version": "repo-file-v1:sha256:c191fd8aa96a8c3239febac7354f0c477e1c34b901629a99034a86b359477c8b"
+        },
+        {
+          "resource": "repo://.codex/config.toml",
+          "version": "repo-file-v1:sha256:bf686d960e872cfbd092955e9db62e765995c3eabab8e3941a4ca292ddca2ed4"
+        }
+      ]
+    },
+    {
+      "id": "claim_e01638f046c642b9aaafefd3ea298cb0",
+      "statement": "Codex OpenWiki MCP는 mise를 통해 Node 22.23.3 및 openwiki 0.7.2의 mcp --host codex를 실행한다.",
+      "evidence": [
+        {
+          "resource": "repo://.agents/plugins/openwiki/mcp.json",
+          "version": "repo-file-v1:sha256:d0c127efb733995c4fe1c7bf9a2c99e448092b2c47e397e58d834707a5987b01"
+        },
+        {
+          "resource": "repo://mise.toml",
+          "version": "repo-file-v1:sha256:0527583746998a596a1d8f41e0adf940e68bd3a77a46c61cd79c5b8fd6e6bf47"
+        }
+      ]
+    },
+    {
+      "id": "claim_93e5a88a7a954af09df8d8fb946e9779",
+      "statement": "pi 기본 패키지는 npm:openwiki@0.7.2이며 Superpowers는 별도 선택 설정 예시에만 선언돼 있다.",
+      "evidence": [
+        {
+          "resource": "repo://.pi/settings.json",
+          "version": "repo-file-v1:sha256:fa5dc261dd25a398c5502fa98916632dbd804ba17124fd64133c79afa29e50ee"
+        },
+        {
+          "resource": "repo://.pi/settings.with-superpowers.example.json",
+          "version": "repo-file-v1:sha256:111c973300e8fe72596e4689d1b0065c8cbcf54f2e42bcbff3e94cf8e433a59b"
+        }
+      ]
+    },
+    {
+      "id": "claim_11f45954810a48fbba6a498b9f2de18e",
+      "statement": "Codex 포장은 upstream OpenWiki 스킬을 변경 없이 포함하며 별도 위키 구현을 추가하지 않는다.",
+      "evidence": [
+        {
+          "resource": "repo://.agents/plugins/openwiki/PROVENANCE.md",
+          "version": "repo-file-v1:sha256:05627ce2e66409a1e7944c001715602c4677f65d3c8ea520910a2eca4bea0a2b"
+        }
+      ]
+    },
+    {
+      "id": "claim_ab69b9554ff3401d9b1799fed7743f58",
+      "statement": "OpenWiki 스킬은 페이지별 근거 제출 후 finish 완료를 요구한다.",
+      "evidence": [
+        {
+          "resource": "repo://.agents/plugins/openwiki/skills/openwiki/SKILL.md",
+          "version": "repo-file-v1:sha256:37bdbb313de37998d85094ffe349e0c05dc05816299b1adf05bbd686c3b698ac"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-10-21T09:25:17.281Z"
+  }
+}
